@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--MainVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainVC" customModule="nikeStore" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UcS-hP-diT">
+                                <rect key="frame" x="0.0" y="44" width="600" height="556"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="100" id="edH-kC-wrb" customClass="NikeProductTableViewCell" customModule="nikeStore" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="edH-kC-wrb" id="8Cj-5w-whL">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="99.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uEH-P3-ZOY">
+                                                    <rect key="frame" x="10" y="10" width="60" height="60"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="60" id="hsY-j2-Ikj"/>
+                                                        <constraint firstAttribute="height" constant="60" id="tws-6g-KfQ"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nike Fleeece" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jJi-8K-fLw">
+                                                    <rect key="frame" x="80" y="10" width="462" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="yoG-SI-dJV"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Avenir-HeavyOblique" family="Avenir" pointSize="20"/>
+                                                    <color key="textColor" red="0.074611089389999996" green="0.031709459490000001" blue="0.33886207460000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nike Fleeece" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hKI-oh-HTe">
+                                                    <rect key="frame" x="80" y="30" width="173" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="173" id="Clh-wq-uNd"/>
+                                                        <constraint firstAttribute="height" constant="21" id="zgK-vW-ZDT"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="75" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7VE-cM-Pui">
+                                                    <rect key="frame" x="80" y="59" width="115" height="21"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                                                    <color key="textColor" red="0.074611089389999996" green="0.031709459490000001" blue="0.33886207460000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="7VE-cM-Pui" firstAttribute="leading" secondItem="hKI-oh-HTe" secondAttribute="leading" id="2sd-YJ-8gJ"/>
+                                                <constraint firstItem="7VE-cM-Pui" firstAttribute="trailing" secondItem="hKI-oh-HTe" secondAttribute="trailing" id="HS3-wq-W9y"/>
+                                                <constraint firstItem="7VE-cM-Pui" firstAttribute="trailing" secondItem="hKI-oh-HTe" secondAttribute="trailing" id="IKa-Kx-7xM"/>
+                                                <constraint firstItem="hKI-oh-HTe" firstAttribute="top" secondItem="8Cj-5w-whL" secondAttribute="top" constant="30" id="W1a-kx-Pjo"/>
+                                                <constraint firstItem="jJi-8K-fLw" firstAttribute="leading" secondItem="uEH-P3-ZOY" secondAttribute="trailing" constant="10" id="c60-YH-hpe"/>
+                                                <constraint firstItem="jJi-8K-fLw" firstAttribute="top" secondItem="8Cj-5w-whL" secondAttribute="top" constant="10" id="cr0-C9-6NB"/>
+                                                <constraint firstItem="7VE-cM-Pui" firstAttribute="leading" secondItem="hKI-oh-HTe" secondAttribute="leading" id="crG-B9-sST"/>
+                                                <constraint firstItem="uEH-P3-ZOY" firstAttribute="leading" secondItem="8Cj-5w-whL" secondAttribute="leading" constant="10" id="crT-Ui-i5O"/>
+                                                <constraint firstItem="hKI-oh-HTe" firstAttribute="leading" secondItem="uEH-P3-ZOY" secondAttribute="trailing" constant="10" id="e75-ef-q3b"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="jJi-8K-fLw" secondAttribute="trailing" constant="50" id="j0l-wg-OgM"/>
+                                                <constraint firstItem="uEH-P3-ZOY" firstAttribute="centerY" secondItem="8Cj-5w-whL" secondAttribute="centerY" id="tNb-jw-EGP"/>
+                                                <constraint firstItem="7VE-cM-Pui" firstAttribute="top" secondItem="hKI-oh-HTe" secondAttribute="bottom" constant="20" id="vuj-eh-Vkq"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.89019607840000003" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <outlet property="color" destination="hKI-oh-HTe" id="JID-H6-xAe"/>
+                                            <outlet property="name" destination="jJi-8K-fLw" id="bdP-su-3Pt"/>
+                                            <outlet property="price" destination="7VE-cM-Pui" id="TO0-Oo-dCW"/>
+                                            <outlet property="thumbImage" destination="uEH-P3-ZOY" id="CGV-nI-Y1A"/>
+                                            <segue destination="btN-qJ-4vd" kind="show" identifier="NikeMainImageVC" id="9gf-S3-51n"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="5ex-df-hm7"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="nRa-mS-sOI"/>
+                                </connections>
+                            </tableView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="34f-aR-wwl">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="G2X-Pa-umz"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Nike Store" id="c0e-6d-5FO"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="34f-aR-wwl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Awa-n0-2wk"/>
+                            <constraint firstItem="UcS-hP-diT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="C5L-HV-mp6"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="UcS-hP-diT" secondAttribute="bottom" id="H5f-Dl-Yzt"/>
+                            <constraint firstAttribute="trailing" secondItem="UcS-hP-diT" secondAttribute="trailing" id="I10-WO-SHM"/>
+                            <constraint firstItem="34f-aR-wwl" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="K0K-TU-6jE"/>
+                            <constraint firstAttribute="trailing" secondItem="34f-aR-wwl" secondAttribute="trailing" id="hfE-ud-4gX"/>
+                            <constraint firstItem="UcS-hP-diT" firstAttribute="top" secondItem="34f-aR-wwl" secondAttribute="bottom" id="jwf-oV-CRv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="nikeProductsTableView" destination="UcS-hP-diT" id="D7p-Kf-lEy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="804" y="309"/>
+        </scene>
+        <!--Nike Main ImageVC-->
+        <scene sceneID="AOS-7D-Lya">
+            <objects>
+                <viewController id="btN-qJ-4vd" customClass="NikeMainImageVC" customModule="nikeStore" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mVO-lY-yRE"/>
+                        <viewControllerLayoutGuide type="bottom" id="pnm-zj-qeL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KPT-jV-Vcv">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1yH-my-9cC">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <color key="backgroundColor" red="0.074611089389999996" green="0.031709459490000001" blue="0.33886207460000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1yH-my-9cC" firstAttribute="top" secondItem="mVO-lY-yRE" secondAttribute="bottom" id="7ja-jY-vJ7"/>
+                            <constraint firstItem="pnm-zj-qeL" firstAttribute="top" secondItem="1yH-my-9cC" secondAttribute="bottom" id="A8m-cq-NXp"/>
+                            <constraint firstItem="1yH-my-9cC" firstAttribute="leading" secondItem="KPT-jV-Vcv" secondAttribute="leading" id="hnZ-zO-IAL"/>
+                            <constraint firstAttribute="trailing" secondItem="1yH-my-9cC" secondAttribute="trailing" id="v1q-wd-5pr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mainImg" destination="1yH-my-9cC" id="gI7-aB-USO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Apl-LB-ywk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1502" y="309"/>
+        </scene>
+    </scenes>
+</document>
